@@ -19,8 +19,8 @@ public class ProductController {
 
     public ProductController() {
         // Початкові дані для демонстрації
-        products.put(counter.incrementAndGet(), new Product(1L, "Laptop", 1200.50));
-        products.put(counter.incrementAndGet(), new Product(2L, "Smartphone", 800.00));
+        products.put(counter.incrementAndGet(), new Product(1L, "Laptop", 1200.50, java.time.LocalDate.now().plusDays(10)));
+        products.put(counter.incrementAndGet(), new Product(2L, "Smartphone", 800.00, java.time.LocalDate.now().plusDays(20)));
     }
 
     // GET /products - отримати всі продукти
